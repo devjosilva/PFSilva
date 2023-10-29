@@ -4,3 +4,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+}
+
+.navegador{
+    height: 15vh;
+    color: white;
+    background-color: rgb(65, 54, 89) ;
+}
+
+.navbar-light .navbar-nav .nav-link.blanco {
+    color: white;
+}
+
+.imagenLogo{
+    width: 60px;
+}
+
+.tarjetaIndex {
+    height: 40vh;
+}
+.tarjetaIndex img {
+    object-fit: cover;
+}
+
+.footer{
+    color: white;
+    background-color: rgb(65, 54, 89) ;
+    padding:10px;
+    text-align: center;
+    border-radius: 5px;
+    .icon{
+        font-size: 3rem;
+        color: #e9d3f8;
+        padding-right: 15px ;
+    }
+    .contenedorIconos{
+        display: inline-block;
+    }
+    .contenedorMapa{
+        display: inline-block;
+        .mapa{
+            width: 250px;
+            height: 200px;
+            border-radius: 5%;
+        }
+    }
+    .contenedorInfo p{
+        font-size: 1.0rem;
+        text-align: center;
+    }
+}
+
+.direccion {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 1.75;
+    color: white;
+}
+
+@media screen and (max-width: 991px){
+    .navegador{
+        height: initial;
+    }
+}

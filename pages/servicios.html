@@ -4,41 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MJ | Servicios</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
         <!--favicon-->
-        <link rel="icon" type="image/png" href="./favicon.ico">       
+        <link rel="icon" type="image/png" href="favicon.ico">
         <!--iconos de fontawesome-->
         <script src="https://kit.fontawesome.com/604b6e9dda.js" crossorigin="anonymous"></script>
- 
     </head>
-    <body>
+    <body class="container-fluid">
         <header class="header">
-            <div class="contenedorNav">
-                <a class="contenedorLogo" href="../index.html">
-                    <img class="logoHeader" src="../assets/img/logo.png" alt="logo">
-                </a>
-                <nav class="navegacion">
-                    <ul class="listaNav">
-                        <li class="listaItem"><a class="linkNav" href="../index.html">Inicio</a></li>
-                        <li class="listaItem"><a class="linkNav" href="nosotros.html">Nosotros</a></li>
-                        <li class="listaItem"><a class="linkNav" href="servicios.html">Servicios</a></li>
-                        <li class="listaItem"><a class="linkNav" href="galeria.html">Galeria</a></li>
-                        <li class="listaItem"><a class="linkNav" href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>         
-        <main class="main">
+            <nav class="navegador navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="imagenLogo rounded" src="../assets/img/logo.png" alt="logo">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end">
+                            <li class="nav-item"><a class="nav-link active blanco" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link blanco" href="../pages/nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link blanco" href="../pages/servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link blanco" href="../pages/galeria.html">Galeria</a></li>
+                            <li class="nav-item"><a class="nav-link blanco" href="../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main class="container mt-3 mb-2">
             <section class="seccionPrincipal">
-                <h1 class="tituloPrimario">Nuestra Misión</h1>
+                <h1 class="text-center">Nuestra Misión</h1>
             </section>
             <section class="tarjetasServicios">
                 <div>
-                    <p class="parrafo">Facilitar el movimiento y la distribución de productos de manera segura, eficiente y confiable, permitiéndote centrarte en lo que mejor haces: hacer crecer tu negocio.
+                    <p class="text-break">Facilitar el movimiento y la distribución de productos de manera segura, eficiente y confiable, permitiéndote centrarte en lo que mejor haces: hacer crecer tu negocio.
                     </p>
                 </div>
-                <div class="tarjetaIndex">
-                    <h2 class="tituloSecundario">Servicios</h2>
+                <div class="p5">
+                    <h2 class="text-center">Servicios</h2>
                     <p>
                         Transporte Terrestre Confiable: Desde carga completa (FTL) hasta carga fraccionada (LTL), garantizamos entregas puntuales y seguras con nuestra flota de vanguardia y conductores experimentados.
                     </p>
@@ -64,17 +69,26 @@
                 </div>
             </section>            
         </main>
-        <footer class="footer">
-            <div class="contenedorIconos">
-                <a class="icon" target="_blank" href="https://api.whatsapp.com/send/?phone=5491130340087"><i class="fa-brands fa-square-whatsapp"></i></a>
-                <a class="icon" target="_blank" href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3684709325"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="icon" target="_blank" href="https://www.instagram.com/coderhouse/?hl=es-la"><i class="fa-brands fa-square-instagram"></i></a>
-            </div>
-            <div class="contenedorInfo">
-                <p>Direccion: Calle estirada 1234</p>
-                <p>Telefono: (+56)9555 55 55</p>
+        <footer class="footer container-fluid p-2" >
+            <div class="row">
+                <div class=" justify-content-around align-items-center">
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="imagenLogo rounded" src="../assets/img/logo.png" alt="logo">
+                    </a>
+                    <div class="direccion">
+                        <p class="blanco">
+                            Calle larga 1234, Santiago, Chile
+                            <br>
+                            <a class="blanco text-decoration-none " href="tel:+5695555555">+56 95555555</a>
+                            <a class="text-decoration-none blanco" href="mailto:info@mj.cl">info@mj.cl</a>
+                        </p>
+                    </div>
+                    <a class="icon" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5491130340087" ><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a class="icon" target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3684709325"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="icon" target="_blank" rel="noopener" href="https://www.instagram.com/coderhouse/?hl=es-la"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
             </div>
         </footer>
+        <script src="../js/bootstrap.min.js"></script>
     </body>
-    
     </html>
