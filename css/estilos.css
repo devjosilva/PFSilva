@@ -31,6 +31,16 @@ body{
     object-fit: cover;
 }
 
+.custom-toggler.navbar-toggler {
+    border-color: white;
+    color: white;
+}
+
+.navbar-toggler-icon{
+    border-color: white;
+    color: white;
+}
+
 .footer{
     color: white;
     background-color: rgb(65, 54, 89) ;
@@ -70,5 +80,5 @@ body{
 @media screen and (max-width: 991px){
     .navegador{
         height: initial;
-    }
+    }   
 }
