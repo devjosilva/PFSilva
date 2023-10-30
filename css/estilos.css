@@ -24,6 +24,16 @@ body{
     width: 60px;
 }
 
+.banner{
+    background-color: rgb(65, 54, 89) ;
+    overflow: hidden;
+}
+
+.bannerBlock{
+    grid-column-gap:90px;
+    grid-row-gap:90px;
+}
+
 .tarjetaIndex {
     height: 40vh;
 }
@@ -40,6 +50,36 @@ body{
     border-color: white;
     color: white;
 }
+
+#pot {
+    bottom: 15%;
+    position: relative;
+    background-color: rgb(65, 54, 89) ;
+    transform-style: preserve-3d;
+    animation-direction: alternate-reverse;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 10s;
+  }
+  @-webkit-keyframes run {
+    0% {
+      right: 0;
+    }
+    48% {
+      -webkit-transform: rotateY(0deg); 
+    }
+    50% { 
+        right: calc(100% - 50px);
+      /*-webkit-transform: rotateY(180deg); */
+    }
+    98% {
+      /*-webkit-transform: rotateY(180deg);*/
+    }
+    100% {
+        right: 0;    
+       -webkit-transform: rotateY(0deg);
+    }
+  }
 
 .footer{
     color: white;
