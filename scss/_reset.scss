@@ -1,0 +1,11 @@
+/*Limpiar en todas paginas margin y padding*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:$tipografia-principal;
+    color:$color-negro;
+}

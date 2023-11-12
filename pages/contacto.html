@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="¿Listo para simplificar tu cadena de suministro? Contacta a M & J Transporte Terrestre y Logística. Estamos aquí para responder tus preguntas, ofrecerte cotizaciones personalizadas y ser tu socio logístico confiable. Descubre cómo podemos llevar tu negocio al siguiente nivel.">
+        <meta name="keywords" content="Contacto con M & J Transporte Terrestre, Cotización de Servicios Logísticos, Preguntas sobre Transporte Terrestre, Consulta de Servicios de Almacenamiento, Comunicación con Equipo Logístico, Asistencia en Logística y Distribución, Solicitar Información de Transporte, Contacto para Logística Inversa, Consulta de Tecnología de Seguimiento, Servicio al Cliente de M & J">
         <title>MJ | Contacto</title>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
@@ -18,46 +20,67 @@
                     <a class="navbar-brand" href="../index.html">
                         <img class="imagenLogo rounded" src="../assets/img/logo.png" alt="logo">
                     </a>
+                    <div>
+                        <h2 class="tituloHeader d-none">Contacto</h2>
+                    </div>
                     <button class="navbar-toggler bg-light custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end">
-                            <li class="nav-item"><a class="nav-link active blanco" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link blanco" href="../index.html">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link blanco" href="../pages/nosotros.html">Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link blanco" href="../pages/servicios.html">Servicios</a></li>
                             <li class="nav-item"><a class="nav-link blanco" href="../pages/galeria.html">Galeria</a></li>
-                            <li class="nav-item"><a class="nav-link blanco" href="../pages/contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link active blanco" href="../pages/contacto.html">Contacto</a></li>
                         </ul>
                   </div>
                 </div>
               </nav>
         </header>
         <main class="container mt-3 mb-2">
+            <section class="seccionPrincipal">
+                <h1 class="text-center">Contactanos</h1>
+            </section>            
+            <section class="seccionDescripcion">
+                <div>
+                    <p class="parrafo">¿Listo para simplificar tu cadena de suministro? Ponte en contacto con M & J Transporte Terrestre y Logística. Estamos aquí para responder a tus preguntas, ofrecer cotizaciones personalizadas y ser tu socio logístico confiable.</p>
+                </div>
+            </section>
             <section>
-            <h1>Contactanos</h1>
             <form action="">
-                <div>
-                    <input id="nombre" name="nombre" type="text" placeholder="Nombre">
+                <!-- Nombre input -->
+                <div class="mb-3">
+                    <label class="form-label" for="nombre">Nombre</label>
+                    <input class="form-control" id="nombre" type="text" placeholder="Nombre" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="nombre:required">Nombre es requerido.</div>
+                </div>                
+                <!-- Email input -->
+                <div class="mb-3">
+                    <label class="form-label" for="emailAddress">Email</label>
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="requerido, email" />
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email es requerido.</div>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email no es validado.</div>
                 </div>
-                <div>
-                    <input id="email" name="email" type="text" placeholder="Email">
-                </div>
+                <!-- Motivo input -->
                 <div>
                     <label id="labelMotivo"  for="motivo">Motivo</label>
-                    <select name="motivo" id="motivo">
+                    <select name="motivo" id="motivo" class="form-select">
                         <option value="cotizar">Cotizar</option>
                         <option value="felicitar">Felicitar</option>
                         <option value="reclar">Reclamar</option>
                         <option value="otro">Otro</option>
                     </select>
                 </div>
-                <div>
-                    <input id="mensaje" name="mensaje" type="text" placeholder="Mensaje">
+                <!-- Mensaje input -->
+                <div class="mb-3">
+                    <label class="form-label" for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" type="text" placeholder="Mensaje" data-sb-validations="required"></textarea>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje es requerido.</div>
                 </div>
-                <div>
-                    <input type="reset" value="Limpiar"> 
-                    <input type="submit" value="Enviar"> 
+                <div class="p-3">
+                    <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                    <button class="btn btn-outline-secondary" type="reset">Limpiar</button>
                 </div>
             </form>
         </section>
@@ -73,16 +96,26 @@
             </div>
         </section>
         </main>
-        <footer class="footer">
-            <div class="contenedorIconos">
-                <a class="icon" target="_blank" href="https://api.whatsapp.com/send/?phone=5491130340087"><i class="fa-brands fa-square-whatsapp"></i></a>
-                <a class="icon" target="_blank" href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3684709325"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="icon" target="_blank" href="https://www.instagram.com/coderhouse/?hl=es-la"><i class="fa-brands fa-square-instagram"></i></a>
+        <footer class="footer container-fluid p-2" >
+            <div class="row">
+                <div class=" justify-content-around align-items-center">
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="imagenLogo rounded" src="../assets/img/logo.png" alt="logo">
+                    </a>
+                    <div class="direccion">
+                        <p class="blanco">
+                            Calle larga 1234, Santiago, Chile
+                            <br>
+                            <a class="blanco text-decoration-none " href="tel:+5695555555">+56 95555555</a>
+                            <a class="text-decoration-none blanco" href="mailto:info@mj.cl">info@mj.cl</a>
+                        </p>
+                    </div>
+                    <a class="icon" target="_blank" rel="noopener" href="https://api.whatsapp.com/send/?phone=5491130340087" ><i class="fa-brands fa-square-whatsapp textLight"></i></a>
+                    <a class="icon" target="_blank" rel="noopener" href="https://www.linkedin.com/school/coderhouse/"><i class="fa-brands fa-linkedin textLight"></i></a>
+                    <a class="icon" target="_blank" rel="noopener" href="https://www.instagram.com/coderhouse/?hl=es-la"><i class="fa-brands fa-square-instagram textLight"></i></a>
+                </div>
             </div>
-            <div class="contenedorInfo">
-                <p>Direccion: Calle estirada 1234</p>
-                <p>Telefono: (+56)9555 55 55</p>
-            </div>
-        </footer>        
+        </footer>
+        <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>

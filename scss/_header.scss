@@ -1,0 +1,76 @@
+header{
+    .navegador{
+        height: 15vh;
+        color:$color-blanco;
+        background-color:$color-principal;
+
+        .imagenLogo{
+            width: map-get($sizes, 60);
+        }
+
+        .nav-link
+        {
+            color:$color-blanco;        
+            padding: map-get($sizes, 10);
+            border-radius: map-get($sizes, 10);
+            &:hover{
+                color: $color-negro;
+                background-color:$color-blanco;
+                border-radius: map-get($sizes, 10);
+            }
+        }
+
+        .nav-link.active.blanco
+        {
+            text-decoration:underline;
+            color:$color-blanco;     
+            &:hover{
+                color: $color-negro;
+            }   
+        }
+    
+        .nav-link.blanco
+        {
+            color:$color-blanco;        
+        }
+        .custom-toggler.navbar-toggler {
+            border-color:$color-blanco;
+            color:$color-blanco;
+        }
+
+        .navbar-toggler-icon{
+            border-color:$color-blanco;;
+            color:$color-blanco;
+        }
+    }
+}
+/*
+.navbar-light .navbar-nav .nav-link.blanco {
+    color:$color-blanco;
+}
+*/
+
+main{
+    .banner{
+        background-color: $color-principal;
+        overflow: hidden;
+    }
+
+    .bannerBlock{
+        grid-column-gap:90px;
+        grid-row-gap:90px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    header{
+        .navegador{
+            height: initial;
+        }   
+            
+        .tituloHeader{
+            display: block!important;
+        }
+    
+    }
+}

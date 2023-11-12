@@ -1,0 +1,39 @@
+
+
+.footer{
+    color: $color-blanco;
+    background-color: $color-principal;
+    padding:10px;
+    text-align: center;
+    border-radius: 5px;
+    .icon{
+        font-size: 3rem;
+        color: #e9d3f8;
+        padding-right: 15px ;
+    }
+    .contenedorIconos{
+        display: inline-block;
+    }
+    .contenedorMapa{
+        display: inline-block;
+        .mapa{
+            width: 250px;
+            height: 200px;
+            border-radius: 5%;
+        }
+    }
+    .contenedorInfo p{
+        /*uso de mixin*/
+        @include font(1rem, normal);
+        text-align: center;
+    }
+
+    .direccion {
+        /*uso de mixin*/
+        @include font(1rem, normal);
+        font-weight: 250;
+        line-height: 1.75;
+        color: $color-blanco;
+    }
+    
+}

@@ -1,0 +1,17 @@
+
+.tarjetaIndex {
+    height: 40vh;
+}
+.tarjetaIndex img {
+    object-fit: cover;
+}
+
+.textLight:hover {
+ 
+    background: rgb(65, 54, 89); 
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    /*box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;*/
+    color:white;
+}
