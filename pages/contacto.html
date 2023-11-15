@@ -8,6 +8,7 @@
         <title>MJ | Contacto</title>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
         <!--favicon-->
         <link rel="icon" type="image/png" href="../favicon.ico">
         <!--iconos de fontawesome-->
@@ -48,53 +49,42 @@
                 </div>
             </section>
             <section>
-            <form action="">
-                <!-- Nombre input -->
-                <div class="mb-3">
-                    <label class="form-label" for="nombre">Nombre</label>
-                    <input class="form-control" id="nombre" type="text" placeholder="Nombre" data-sb-validations="required" />
-                    <div class="invalid-feedback" data-sb-feedback="nombre:required">Nombre es requerido.</div>
-                </div>                
-                <!-- Email input -->
-                <div class="mb-3">
-                    <label class="form-label" for="emailAddress">Email</label>
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="requerido, email" />
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email es requerido.</div>
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email no es validado.</div>
-                </div>
-                <!-- Motivo input -->
-                <div>
-                    <label id="labelMotivo"  for="motivo">Motivo</label>
-                    <select name="motivo" id="motivo" class="form-select">
+                <form action="./error404.html" method="post" class="w-50 offset-3 needs-validation">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" id="name" name="name" class="form-control mb-3" required>
+                    <label for="lastname" class="form-label">Apellido</label>
+                    <input type="text" id="lastname" name="lastname" class="form-control mb-3" required>
+
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control mb-3" required>
+                    
+                    <label for="motivo" class="form-label">Motivo</label>
+                    <select name="motivo" id="motivo" class="form-control mb-3" required>
                         <option value="cotizar">Cotizar</option>
                         <option value="felicitar">Felicitar</option>
                         <option value="reclar">Reclamar</option>
                         <option value="otro">Otro</option>
                     </select>
-                </div>
-                <!-- Mensaje input -->
-                <div class="mb-3">
-                    <label class="form-label" for="message">Mensaje</label>
-                    <textarea class="form-control" id="message" type="text" placeholder="Mensaje" data-sb-validations="required"></textarea>
-                    <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje es requerido.</div>
-                </div>
-                <div class="p-3">
+                    
+                    <label for="description" class="form-label">Mensaje</label>
+                    <textarea type="text" id="description" name="description" class="form-control mb-3" required></textarea>
+
+                    <!--button type="submit" class="btn btn-outline-info">Submit</button-->
                     <button class="btn btn-outline-secondary" type="submit">Enviar</button>
                     <button class="btn btn-outline-secondary" type="reset">Limpiar</button>
+                </form>
+            </section>
+            <section class="text-center p-5 seccionMapa">
+                <div class="contenedorMapaInfo">
+                    <div  class="contenedorMapa">
+                        <iframe class="mapa"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106557.88454085407!2d-70.59993838495264!3d-33.424967830302734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf19a8dab4bd%3A0x93c1479cef180269!2sLas%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1696688877747!5m2!1ses-419!2scl"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
-            </form>
-        </section>
-        <section class="seccionMapa">
-            <div class="contenedorMapaInfo">
-                <div  class="contenedorMapa">
-                    <iframe class="mapa"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106557.88454085407!2d-70.59993838495264!3d-33.424967830302734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf19a8dab4bd%3A0x93c1479cef180269!2sLas%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1696688877747!5m2!1ses-419!2scl"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </section>
+            </section>
         </main>
         <footer class="footer container-fluid p-2" >
             <div class="row">
