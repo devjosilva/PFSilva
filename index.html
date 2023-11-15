@@ -117,11 +117,11 @@
                 </p>
             </div-->
         </section>
-        <section  class="banner container-fluid">
-            <div id="pot" class="bannerBlock d-flex p-3 w-100 h-75 align-items-center">
-                <img src="./assets/img/logo-mercado-libre.png" loading="lazy" alt="Logo Mercado Libre">
-                <img src="./assets/img/logo-nestle.png" loading="lazy" alt="Logo Nestle">
-                <img src="./assets/img/logo-falabella.png" loading="lazy" alt="Logo Falabella">
+        <section  class="banner container-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Nuestros Clientes" >
+            <div id="pot" class="bannerBlock d-flex p-3 w-100 h-75 align-items-center" >
+                <a target="_blank" rel="noopener" href="https://www.mercadolibre.cl/"><img src="./assets/img/logo-mercado-libre.png" loading="lazy" alt="Logo Mercado Libre"></a>
+                <a target="_blank" rel="noopener" href="https://www.nestle.cl/"><img src="./assets/img/logo-nestle.png" loading="lazy" alt="Logo Nestle"></a>
+                <a target="_blank" rel="noopener" href="https://www.falabella.com/falabella-cl"><img src="./assets/img/logo-falabella.png" loading="lazy" alt="Logo Falabella"></a>
             </div>
         </section>
         <section class="container p-5" >
@@ -170,5 +170,13 @@
         </div>
     </footer>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        /****Implementa Tooltip****/
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
 </body>
 </html>
