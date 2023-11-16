@@ -135,6 +135,13 @@ main .bannerBlock {
   margin-top: 16px;
 }
 
+/* for images to be same height */
+.img-same-height {
+  object-fit: cover;
+  width: 400px;
+  height: 250px;
+}
+
 .gallery-item {
   margin-bottom: 20px;
 }
@@ -146,6 +153,25 @@ main .bannerBlock {
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.colorb {
+  background-color: yellow;
 }
 
 @media screen and (max-width: 991px) {
