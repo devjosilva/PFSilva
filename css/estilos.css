@@ -82,23 +82,50 @@ main .bannerBlock {
 
 @-webkit-keyframes run {
   0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+  /*
+  0% {
     right: 0;
   }
   48% {
-    -webkit-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); 
   }
-  50% {
-    right: calc(100% - 50px);
-    /*-webkit-transform: rotateY(180deg); */
+  50% { 
+      right: calc(100% - 50px);
   }
   98% {
-    /*-webkit-transform: rotateY(180deg);*/
   }
   100% {
-    right: 0;
-    -webkit-transform: rotateY(0deg);
+      right: 0;    
+     -webkit-transform: rotateY(0deg);
   }
+  */
 }
+.carousel-inner {
+  height: 50vh;
+  padding-bottom: 30%; /* this sets carousel aspect ratio (4:1 here) */
+}
+
+.carousel-item {
+  position: absolute !important; /* Bootstrap is insistent */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel-item img {
+  height: 100%; /* Bootstrap handles width already */
+  object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+}
+
 .tarjetaIndex {
   height: 40vh;
 }
